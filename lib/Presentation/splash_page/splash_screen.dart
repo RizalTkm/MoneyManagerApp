@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:money_manager_app/Presentation/controllers/splash_controller.dart';
 import 'package:money_manager_app/core/constants.dart';
+import 'package:money_manager_app/core/spaces.dart';
 import 'package:money_manager_app/core/theme_data.dart';
 
 class SPlashScreen extends GetWidget<SplashController> {
@@ -23,13 +24,17 @@ class SPlashScreen extends GetWidget<SplashController> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const CircleAvatar(
-            backgroundColor: MoneyManagercolors.white,
-            radius: 60,
-            backgroundImage: AssetImage(
-                'assets/images/1200px-Cartoon_Guy_Letting_Money_Fly.svg.png'),
+          CircleAvatar(
+            radius: 55,
+            backgroundColor: Colors.transparent,
+            child: ClipOval(
+              child: Image.asset(
+                'assets/images/1024.png',
+              ),
+            ),
           ),
-          Text('Money Manager',
+          Spaces.Kheight10,
+          Text('Cent.',
               textAlign: TextAlign.center,
               style: Theme.of(context)
                   .textTheme
@@ -40,3 +45,9 @@ class SPlashScreen extends GetWidget<SplashController> {
     ));
   }
 }
+
+//  CC
+//  keytool -genkey -v -keystore \upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+//  D:\android studio\jre\bin\java
+// \D:\android studio\jre\bin\keytool -genkey -v -keystore D:\flutter_projects\flutter_project_keys\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+// rizal@1996
