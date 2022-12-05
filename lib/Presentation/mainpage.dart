@@ -24,7 +24,7 @@ class Mainpage extends GetWidget<Mainpagecontroller> {
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(80),
         child: AppbarWidget(
-          title: 'Money manager',
+          title: 'Cent.',
         ),
       ),
       bottomNavigationBar: BottomNavigationWidget(),
@@ -42,7 +42,6 @@ class Mainpage extends GetWidget<Mainpagecontroller> {
           } else {
             print('add category');
 
-            // await controller.InsertDataToHive();
             controller.showPopUptoCreateCategory(context);
           }
         },

@@ -46,8 +46,3 @@ class SPlashScreen extends GetWidget<SplashController> {
   }
 }
 
-//  CC
-//  keytool -genkey -v -keystore \upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
-//  D:\android studio\jre\bin\java
-// \D:\android studio\jre\bin\keytool -genkey -v -keystore D:\flutter_projects\flutter_project_keys\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
-// rizal@1996
